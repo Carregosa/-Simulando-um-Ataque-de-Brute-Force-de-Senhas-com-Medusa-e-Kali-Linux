@@ -32,3 +32,29 @@ medusa-password-cracking/
 ├── resultados/
 │   └── logs.txt
 └── imagens/
+
+✅ Etapas do projeto
+
+1. Preparar o Kali Linux Bootável
+Criar um pendrive bootável com Kali Linux usando ferramentas como Rufus ou balenaEtcher.
+Documentar esse processo no arquivo setup/kali-boot.md.
+
+2. Instalar e configurar Medusa
+Medusa já vem no Kali, mas você pode garantir com:
+sudo apt update
+sudo apt install medusa
+
+3. Realizar o teste de quebra de senha
+Escolha um serviço alvo em ambiente controlado (ex: SSH local, FTP local).
+Exemplo de comando:
+medusa -h 192.168.0.10 -u admin -P senhas.txt -M ssh
+
+
+
+
+
+
+
+
+
+
